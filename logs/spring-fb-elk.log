@@ -1,0 +1,74 @@
+spring-fb-elk 2021-10-21 22:56:50.571 [main] INFO com.techboss.SpringElkFbApplication.logStarting - Starting SpringElkFbApplication v0.0.1-SNAPSHOT using Java 1.8.0_231 on elcot-PC with PID 1824 (C:\Users\elcot\Downloads\spring-elk-fb\target\spring-elk-fb-0.0.1-SNAPSHOT.jar started by elcot in C:\Users\elcot\Downloads\spring-elk-fb)
+spring-fb-elk 2021-10-21 22:56:50.600 [main] INFO com.techboss.SpringElkFbApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+spring-fb-elk 2021-10-21 22:56:54.885 [main] INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8086 (http)
+spring-fb-elk 2021-10-21 22:56:54.913 [main] INFO org.apache.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-8086"]
+spring-fb-elk 2021-10-21 22:56:54.914 [main] INFO org.apache.catalina.core.StandardService.log - Starting service [Tomcat]
+spring-fb-elk 2021-10-21 22:56:54.915 [main] INFO org.apache.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.53]
+spring-fb-elk 2021-10-21 22:56:55.153 [main] INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+spring-fb-elk 2021-10-21 22:56:55.154 [main] INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 4337 ms
+spring-fb-elk 2021-10-21 22:56:56.701 [main] INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver.<init> - Exposing 1 endpoint(s) beneath base path '/actuator'
+spring-fb-elk 2021-10-21 22:56:56.767 [main] INFO org.apache.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-8086"]
+spring-fb-elk 2021-10-21 22:56:56.817 [main] INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8086 (http) with context path ''
+spring-fb-elk 2021-10-21 22:56:56.859 [main] INFO com.techboss.SpringElkFbApplication.logStarted - Started SpringElkFbApplication in 8.136 seconds (JVM running for 9.332)
+spring-fb-elk 2021-10-21 22:57:27.712 [http-nio-8086-exec-1] INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+spring-fb-elk 2021-10-21 22:57:27.712 [http-nio-8086-exec-1] INFO org.springframework.web.servlet.DispatcherServlet.initServletBean - Initializing Servlet 'dispatcherServlet'
+spring-fb-elk 2021-10-21 22:57:27.715 [http-nio-8086-exec-1] INFO org.springframework.web.servlet.DispatcherServlet.initServletBean - Completed initialization in 2 ms
+spring-fb-elk 2021-10-21 22:57:27.874 [http-nio-8086-exec-1] INFO com.techboss.controller.TestController.generateLogs - INFO Message
+spring-fb-elk 2021-10-21 22:57:27.875 [http-nio-8086-exec-1] WARN com.techboss.controller.TestController.generateLogs - WARN Message
+spring-fb-elk 2021-10-21 22:57:27.890 [http-nio-8086-exec-1] ERROR com.techboss.controller.TestController.generateLogs - null
+java.lang.NullPointerException: null
+	at com.techboss.controller.TestController.generateLogs(TestController.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)

@@ -1,0 +1,12 @@
+filebeat.prospectors:
+- input_type: log
+  paths:
+    - C:/Users/elcot/Downloads/spring-elk-fb/logs/*.log
+  multiline.type: pattern
+  multiline.pattern: '^[[:space:]]'
+  multiline.negate: false
+  multiline.match: after
+
+output.logstash:
+  hosts: ["localhost:5044"]
+  protocol: "http"

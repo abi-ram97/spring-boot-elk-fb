@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: spring-fb-elk
+  output:
+    ansi:
+      enabled: always
+
+server:
+  port: 8086
